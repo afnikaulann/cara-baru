@@ -123,14 +123,63 @@ body {
 }
 
 /* Button Section */
+/* Tombol CTA */
 .cta-button {
-    margin-top: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .btn-green {
+    display: flex;
+    align-items: center;
+    background-color: #468dff; /* Warna hijau khas WhatsApp */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Animasi Bounce yang Lebih Menarik */
+@keyframes fancyBounce {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(-3deg);
+    }
+}
+.cta-text {
+    background-color: #FF5733; /* Ganti dengan warna yang diinginkan */
+    color: white; /* Mengatur warna teks menjadi putih agar kontras dengan latar belakang */
+    padding: 10px 20px; /* Menambahkan padding agar teks tidak terlalu rapat */
+    border-radius: 5px; /* Membuat sudut sedikit melengkung */
+    font-size: 16px; /* Mengatur ukuran font */
+}
+
+/* Ikon dengan animasi fancyBounce */
+.whatsapp-icon {
+    width: 1000px; /* Ukuran ikon lebih besar */
+    height: 1000px;
+    margin-right: 15px; /* Jarak antara ikon dan teks */
+    animation: fancyBounce 2s infinite; /* Efek loncat yang menarik */
+    animation-timing-function: ease-in-out;
+    border-radius: 100%; /* Membuat ikon berbentuk lingkaran */
+}
+
+
+.btn-green {
     display: inline-block;
-    background-color: #2dc653;
+    background-color: #b2beb5;
     color: #ffffff;
     font-weight: bold;
     padding: 10px 25px;
